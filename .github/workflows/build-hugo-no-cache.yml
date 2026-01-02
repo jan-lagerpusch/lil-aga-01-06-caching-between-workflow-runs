@@ -12,9 +12,9 @@ jobs:
           ref: stable
 
       - name: Setup go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v6
         with:
-          go-version: 1.17
+          go-version: '1.23'
 
       - name: Build the hugo executable
         run: go install --tags extended
