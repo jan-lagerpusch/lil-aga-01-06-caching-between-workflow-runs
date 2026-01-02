@@ -12,7 +12,7 @@ jobs:
           ref: stable
 
       - name: Setup the cache after checkout to build a cache key using go.sum
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cache/go-build
